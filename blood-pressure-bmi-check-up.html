@@ -3,7 +3,7 @@
     <head>
 		<title>A Good Life Guide</title>
 		<meta charset="UTF-8">
-		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/responsiveslides.css">
@@ -14,12 +14,12 @@
     <div class="wrap">
      <nav>
 	  <div class="container1">
-	  <div class="main-header">	
+	  <header class="main-header" id="top">	
 	       <span id="header-title"><a href="index.html" class= "selected">agoodlifeguide</a></span>
-				<button class="handle">
+				<button class="handle" aria-label="Click to view the Menubar">
 				  <i class="fa fa-bars"></i>
 				</button>
-	  </div> 		
+	  </header><!--/.main-header--> 		
 			<ul>
 				<li class="dropdown"><a href="#" >Healthy Food<br> Habits</a> 
 				   <ul class="drop-nav">
@@ -52,7 +52,7 @@
 				</li>
                 <li><a href="recentposts.html" >Recent<br> Posts </a></li>				        
 			</ul>
-		</div><!--/container-->
+		</div><!--/container1-->
    </nav><!--/nav-->
     <div class="slider">
 		   <ul class="rslides">
@@ -65,18 +65,18 @@
 		
     
 	 <div class="container2"> 
-	  <section > 
-	    <!making a right sidebar-->	
+	  <aside> 
+	    
 		
 		<div class="sideright">
 			<h3>Your Feedback</h3>
 			<p>Have questions or comments?<br>
 			   Please feel free to contact us
-			   & give us your<br> <a href="form.php" target="_blank"> feedback</a>.<br>
+			   & give us your<br> <a href="form.php" target="_blank" aria-label="Give us your feedback"> feedback</a>.<br>
 			</p>
-		</div><!--/rightsidebar-->
+		</div><!--/.sideright-->
 		
-		<!making a second right sidebar-->		
+				
 		<div class="sideright2">
 		<h3>Must Read Articles</h3>
 		<p>
@@ -93,16 +93,16 @@
 						<li><a href="health-screenings-for-women.html">Health Screenings for Women</a></li>
 			</ul>
 		</p>
-		</div><!--/rightsidebar2-->
-		
-		<!making 3rd right sidebar-->		
+		</div><!--/.sideright2-->
+				
 		
 		<div class="imagesidebar">
 			<a href="contactform.php" target="_blank">
 			  <img  src="images/brandlogo.jpg">
 			</a>
-		</div><!--/rightsidebar3-->
-	    
+		</div><!--/.imagesidebar-->
+	   </aside> 
+	   <section>
 		<h1>Blood Pressure & BMI Check-up</h1>
 	   
 	    <p>
@@ -192,12 +192,12 @@
 	    
 		
 		<p class="click1">
-		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank"> twitter </a>
-                                   <a class="click3" href="https://facebook.com/" target="_blank"> facebook </a>
-		                           <a class="click4" href="https://gmail.com/" target="_blank">Email</a>
+		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank" aria-label="Go share at twitter"> twitter </a>
+                                   <a class="click3" href="https://facebook.com/" target="_blank" aria-label="Go share at facebook"> facebook </a>
+		                           <a class="click4" href="https://gmail.com/" target="_blank" aria-label="Go share by email">Email</a>
 		</p>  
-	  </section>
-	 </div><!--/.container-->
+	  </section><!--/section-->
+	 </div><!--/.container2-->
 	</div><!--/.wrap-->
 	 
 	<footer class="main-footer">
@@ -208,18 +208,14 @@
 	   <p class="copyright">&copy;2017 www.agoodlifeguide.hasinaakhter.com All rights reserved.</p>
 	   <p>Created by Hasina Akhter </p>
 	   <p class="note">NOTE: All the information at www.agoodlifeguide.com is strictly
-	      for educational purposes only.<br> For specific medical advice 
-		  or treatment please consult with your doctor.
+	      for educational purposes only.
 	   </p>  
-	   <a href="#top">
-          <i class="fa fa-arrow-circle-up" style="font-size:42px;color:lightolive; line-height: 1.5;"></i>		
+	   <a href="#top" aria-label="Go to top">
+          <i class="fa fa-arrow-circle-up" style="font-size:42px;color:olive; line-height: 1.5;"></i>		
 	    </a>   
 	 </footer>
 
-  <script
-      src="https://code.jquery.com/jquery-3.1.0.min.js"
-      integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-      crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js">
   </script>
   <script src="js/responsiveslides.min.js"></script>
   <script>

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 		<title>A Good Life Guide</title>
-		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/responsiveslides.css">
@@ -13,12 +13,12 @@
     <div class="wrap">
      <nav>
 	  <div class="container1">
-	  <div class="main-header">	
+	  <header class="main-header" id="top">	
 	       <span id="header-title"><a href="index.html" class= "selected">agoodlifeguide</a></span>
-				<button class="handle">
+				<button class="handle" aria-label="Click to view the Menubar">
 				  <i class="fa fa-bars"></i>
 				</button>
-	  </div> 		
+	  </header> <!--/.main-header-->		
 			<ul>
 				<li class="dropdown"><a href="#" >Healthy Food<br> Habits</a> 
 				   <ul class="drop-nav">
@@ -64,18 +64,18 @@
 		
     
 	 <div class="container2"> 
-	  <section > 
-	    <!making a right sidebar-->	
+	  <aside> 
+	    
 		
 		<div class="sideright">
 			<h3>Your Feedback</h3>
 			<p>Have questions or comments?<br>
 			   Please feel free to contact us
-			   & give us your<br> <a href="form.php" target="_blank"> feedback</a>.<br>
+			   & give us your<br> <a href="form.php" target="_blank" aria-label="Give us your feedback"> feedback</a>.<br>
 			</p>
-		</div><!--/rightsidebar-->
+		</div><!--/.sideright-->
 		
-		<!making a second right sidebar-->		
+			
 		<div class="sideright2">
 		<h3>Must Read Articles</h3>
 		<p>
@@ -92,17 +92,18 @@
 						<li><a href="health-screenings-for-women.html">Health Screenings for Women</a></li>
 			</ul>
 		</p>
-		</div><!--/rightsidebar2-->
+		</div><!--/.sideright2-->
 		
-		<!making 3rd right sidebar-->		
+				
 		
 		<div class="imagesidebar">
 			<a href="contactform.php" target="_blank">
 			  <img  src="images/brandlogo.jpg">
 			</a>
-		</div><!--/rightsidebar3-->
+		</div><!--/.imagesidebar-->
+		</aside>
 		
-		
+		<section>
 	    <h1>Avoid Sitting for Long Time</h1>
 	   
 	    <p>
@@ -130,14 +131,14 @@
 		   </strong>
 		  </ul>
         </p>
-		<p>For further details  see CBS news report<a href="http://www.cbsnews.com/news/too-much-sitting-raises-risk-of-death-even-if-you-exercise/" target="_blank"> here</a></p>
-    <p>References:  <a href="https://www.ncbi.nlm.nih.gov/pubmed/15604935" target="_blank">15</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Zderic+TW+2006" target="_blank">16</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/12213942" target="_blank" >17</a>,
-                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/13110075" target="_blank">18</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/9799173" target="_blank">19</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/16835422" target="_blank">20</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/25628179" target="_blank">21</a>
+		<p>For further details  see CBS news report<a href="http://www.cbsnews.com/news/too-much-sitting-raises-risk-of-death-even-if-you-exercise/" target="_blank" aria-label="Go to reference video"> here</a></p>
+    <p>References:  <a href="https://www.ncbi.nlm.nih.gov/pubmed/15604935" target="_blank">15</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Zderic+TW+2006" target="_blank" aria-label="Go to reference article">16</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/12213942" target="_blank" >17</a>,
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/13110075" target="_blank">18</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/9799173" target="_blank">19</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/16835422" target="_blank" aria-label="Go to reference article">20</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/25628179" target="_blank" aria-label="Go to reference article">21</a>
      </p>
 		<p class="click1">
-		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank"> twitter </a>
-                                   <a class="click3" href="https://facebook.com/" target="_blank"> facebook </a>
-		                           <a class="click4" href="https://gmail.com/" target="_blank">Email</a>
+		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank" aria-label="Go share at twitter"> twitter </a>
+                                   <a class="click3" href="https://facebook.com/" target="_blank" aria-label="Go share at facebook"> facebook </a>
+		                           <a class="click4" href="https://gmail.com/" target="_blank" aria-label="Go share by email">Email</a>
 		</p> 
 	  </section>
 	 </div><!--/.container-->

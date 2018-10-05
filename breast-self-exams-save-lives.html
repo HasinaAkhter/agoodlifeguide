@@ -3,7 +3,7 @@
     <head>
 		<title>A Good Life Guide</title>
 		<meta charset="UTF-8">
-		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,400italic' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/responsiveslides.css">
@@ -14,12 +14,12 @@
     <div class="wrap">
      <nav>
 	  <div class="container1">
-	  <div class="main-header">	
+	  <header class="main-header" id="top">	
 	       <span id="header-title"><a href="index.html" class= "selected">agoodlifeguide</a></span>
-				<button class="handle">
+				<button class="handle" aria-label="Click to view the Menubar">
 				  <i class="fa fa-bars"></i>
 				</button>
-	  </div> 		
+	  </header> <!--/.main-header-->		
 			<ul>
 				<li class="dropdown"><a href="#" >Healthy Food<br> Habits</a> 
 				   <ul class="drop-nav">
@@ -52,7 +52,7 @@
 				</li>
                 <li><a href="recentposts.html" >Recent<br> Posts </a></li>				        
 			</ul>
-		</div><!--/container-->
+		</div><!--/container1-->
    </nav><!--/nav-->
     <div class="slider">
 		   <ul class="rslides">
@@ -65,18 +65,18 @@
 		
     
 	 <div class="container2"> 
-	  <section > 
-	    <!making a right sidebar-->	
+	  <aside> 
+	    
 		
 		<div class="sideright">
 			<h3>Your Feedback</h3>
 			<p>Have questions or comments?<br>
 			   Please feel free to contact us
-			   & give us your<br> <a href="form.php" target="_blank"> feedback</a>.<br>
+			   & give us your<br> <a href="form.php" target="_blank" aria-label="Give us your feedback"> feedback</a>.<br>
 			</p>
-		</div><!--/rightsidebar-->
+		</div><!--/.sideright-->
 		
-		<!making a second right sidebar-->		
+			
 		<div class="sideright2">
 		<h3>Must Read Articles</h3>
 		<p>
@@ -93,16 +93,17 @@
 						<li><a href="health-screenings-for-women.html">Health Screenings for Women</a></li>
 			</ul>
 		</p>
-		</div><!--/rightsidebar2-->
+		</div><!--/.sideright2-->
 		
-		<!making 3rd right sidebar-->		
 		
 		<div class="imagesidebar">
 			<a href="contactform.php" target="_blank">
 			  <img  src="images/brandlogo.jpg">
 			</a>
-		</div><!--/rightsidebar3-->
-	    
+		</div><!--/.imagesidebar-->
+	   </aside>
+       
+	   <section>	   
 	    <h1>Breast Self-exams Can Save Lives</h1>
 		<p>
 		 Breast self-exams can save lives if it is done thoroughly and carefully as  does your doctor. As you know, breast cancer is the second leading cause of death among women in USA. It also affects men but rarely. Study says, in 2015, there are >2.8 million women in USA with a history of breast cancer including those currently being treated as well as those who have finished treatment. The earlier it is detected the better.
@@ -148,18 +149,18 @@
          However, there could be some other signs on the breasts such as skin dimpling that may left unnoticed. Lisa Royle  (42-year-old Manchester woman ) who had to go through mastectomy and subsequent chemotherapy warned us at facebook with this alarming issue in her very touchy words:
 		</p>
 		<p><i><q class="design">Very subtle dimples underneath that could easily be missed when we’re all rushing round getting ready in a morning. Please take time to look at your boobs. It could save your life</i></q></p>
-	<p>Here is the <a href="http://www.cbsnews.com/news/breast-cancer-selfie-facebook-photo-warns-women-what-to-look-for/" target="_blank">CBC news report</a> about Lisa Royle’s  facebook selfie.</p>  
+	<p>Here is the <a href="http://www.cbsnews.com/news/breast-cancer-selfie-facebook-photo-warns-women-what-to-look-for/" target="_blank" aria-label="Go to reference news report">CBC news report</a> about Lisa Royle’s  facebook selfie.</p>  
 	<p>Therefore, breast self-exams can save lives if you are very through and watchful as instructed by your doctor. You need to be very careful for the slightest little changes on your breasts and consult with your doctor.</p>
 	<p><strong>It is always recommended that you should visit your doctor for clinical breast exam every one to three years in your 20s and 30s and every year starting at your 40s. </strong></p>  
 	    
 	    <p class="click1">
-		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank"> twitter </a>
-                                   <a class="click3" href="https://facebook.com/" target="_blank"> facebook </a>
-		                           <a class="click4" href="https://gmail.com/" target="_blank">Email</a>
+		   <i>Share this page:</i> <a class="click2" href="https://twitter.com/" target="_blank" aria-label="Go share at twitter"> twitter </a>
+                                   <a class="click3" href="https://facebook.com/" target="_blank" aria-label="Go share at facebook"> facebook </a>
+		                           <a class="click4" href="https://gmail.com/" target="_blank" aria-label="Go share by email">Email</a>
 		</p> 		
 		
-	  </section>
-	 </div><!--/.container-->
+	  </section><!--/section-->
+	 </div><!--/.container2-->
 	</div><!--/.wrap-->
 	 
 	<footer class="main-footer">
@@ -170,11 +171,10 @@
 	   <p class="copyright">&copy;2017 www.agoodlifeguide.hasinaakhter.com All rights reserved.</p>
 	   <p>Created by Hasina Akhter </p>
 	   <p class="note">NOTE: All the information at www.agoodlifeguide.com is strictly
-	      for educational purposes only.<br> For specific medical advice 
-		  or treatment please consult with your doctor.
+	      for educational purposes only.
 	   </p>  
 	   <a href="#top">
-          <i class="fa fa-arrow-circle-up" style="font-size:42px;color:lightolive; line-height: 1.5;"></i>		
+          <i class="fa fa-arrow-circle-up" style="font-size:42px;color:olive; line-height: 1.5;"></i>		
 	    </a>  
 	 </footer>
 
